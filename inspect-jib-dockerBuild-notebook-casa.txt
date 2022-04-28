@@ -1,0 +1,94 @@
+[
+    {
+        "Id": "sha256:b8467c5a9ceb163b92925362ca82c64dc28ddd65162f48c9cd9abc9426463d23",
+        "RepoTags": [
+            "myimage:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "jvm arg files",
+        "Created": "1970-01-01T00:00:00Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_HOME=/opt/java/openjdk",
+                "JAVA_VERSION=jdk-11.0.15+10",
+                "LANG=en_US.UTF-8"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": {},
+            "WorkingDir": "",
+            "Entrypoint": [
+                "java",
+                "-cp",
+                "@/app/jib-classpath-file",
+                "com.example.demo.DemoApplication"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 252831445,
+        "VirtualSize": 252831445,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/59dfa4923c5d84258b8a0d05f64fea06344ca9a42530ef55bfd4af1bd1b874f9/diff:/var/lib/docker/overlay2/7bc89692df4079e697c0a06e777db7a2d86744b0b98ed4d128daefaddbd6308a/diff:/var/lib/docker/overlay2/b65e13e966434fe0cf725e09a01b598bd70ed7a50d761078baa127d37a761e4c/diff:/var/lib/docker/overlay2/53dbc81ef524c55684ec818ac80b1ac6ea1fd323d766d19670616635cfada790/diff:/var/lib/docker/overlay2/c133be4280b5058b7eaa728831f78d2f1aaed94dbcfd0a077e621e4e1b59846d/diff:/var/lib/docker/overlay2/e454031425221a8d66958440750dc196f55418bad9659cf0b6e269bd26a37ecb/diff:/var/lib/docker/overlay2/e33106f130d7ec5725944739ef8e1ac8dc9095b822133635fcf69cfb32c2be0d/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d0c94d6a82554bb12166ca9adca8f5bf9efda85b3a6b5eb255381df9375b64a9/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d0c94d6a82554bb12166ca9adca8f5bf9efda85b3a6b5eb255381df9375b64a9/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d0c94d6a82554bb12166ca9adca8f5bf9efda85b3a6b5eb255381df9375b64a9/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:1fbfc8517de4c53055dc2fbcce0fd87b46e82a5e74c624cab2eb8d2bd5540479",
+                "sha256:22d8a1a0bc85617dca4388221f9eacf32dada8b03c6ea04bcb63f5579c6fd848",
+                "sha256:c58635fab60710fe505f9fced6974bb1ab261a308ddf07801eecfc67ead95b2d",
+                "sha256:d03224c0b52f6f1c91c2fbade12b9b02c7052c593f3e69fb0dfea2cf3678d2c5",
+                "sha256:567ee148c15cbd862eb865e03877deee46b093cbada66f1cdc103ba6eb78f7e1",
+                "sha256:2f149da86288105c8e941b71f5750baa8ac9495f3fbf46680c8fdcba53555079",
+                "sha256:33ae507de7319975f0b7bb3d301c0982290d5c4afe72465da7b9575bb6b3ea1d",
+                "sha256:23f50ff1ecfb289a6f24a4089e482803c100c045feb83f1681897cccca9abddb"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
